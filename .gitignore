@@ -1,0 +1,27 @@
+# Match data is licensed for the competition only: never commit it.
+data/*
+!data/README.md
+*.mp4
+
+# Generated submissions and reports (the starter baselines are kept for comparison).
+evaluation/results/*.csv
+!evaluation/results/baseline_*.csv
+evaluation/reports/
+evaluation/scoreboard.csv
+
+# Full-match ground truth is private.
+*_possession_gt.csv
+*_possession_gt_meta.json
+
+# Environment and editor files.
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+*.zip
+
+# Personal working notes, not for the public repo.
+notes/
